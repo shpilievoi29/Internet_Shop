@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block doctitle %}Product detail|  {{ block.super }}{% endblock %}
+{% block content %}
+    <form  method="post">
+    {% csrf_token %}
+
+    </form>
+    <ul>
+
+    {{form}}
+    <button type="submit">Submit</button>
+
+    <a href="{% url "product_list" %}">Product list</a>
+    <a href="{% url "order-create" %}">Make order</a>
+    </ul>
+
+
+
+{% endblock %}

@@ -1,0 +1,5 @@
+/__pycache__
+/.git
+*.pyc
+.idea/
+__pycadb.sqlite3che__/

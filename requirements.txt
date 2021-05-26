@@ -1,0 +1,13 @@
+asgiref==3.3.4
+Django==3.2.3
+Pillow==8.2.0
+psycopg2-binary==2.8.6
+py2sqlite3==0.19
+pysqlite3tool==0.0.1a0
+pytz==2021.1
+sqlite3-api==2.0.1
+sqlite3-backup==0.3.2
+sqlite3-crud-2021==0.0.2
+sqlite3-plus==1.0.1
+sqlite3dbm==0.1.0
+sqlparse==0.4.1

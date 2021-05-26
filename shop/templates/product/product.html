@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block doctitle %} Product list |  {{ block.super }}{% endblock %}
+{% block content %}
+    <form  method="post">
+{% csrf_token %}
+
+        {% for product in product_list %}
+                <img src="{{ product.image}}" class="card-img-top" alt="{{ product.image }}">
+            <p class="card-text">{{ product.product_description|truncatewords:"300" }}</p>
+               <ul> <a href="{% url "product_detail" slug=product.slug %}">
+                >{{product.product}}</a></ul>
+
+        {% endfor %}
+
+</form>
+{% endblock %}

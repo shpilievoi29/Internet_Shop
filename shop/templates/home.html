@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block doctitle %} Home page| {{block.super}} {% endblock %}
+{% block content %}
+<a href="{% url "order-create" %}">Make order</a>
+    <a href="{% url "product_list" %}">Products</a>
+{% endblock %}
